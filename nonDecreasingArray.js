@@ -10,8 +10,8 @@ function isNonDecreasingArr(arr) {
     return true;
 }
 
-console.log(checkNonDecreasingArrayPossibility([1, 1, 2, 4, 4, 3, 5])); //false;
-console.log(checkNonDecreasingArrayPossibility([1, 2, 3, 4, 5])) // false;
+console.log(isNonDecreasingArr([1, 1, 2, 4, 4, 3, 5])); //false;
+console.log(isNonDecreasingArr([1, 2, 3, 4, 5])) // true;
 
 
 
@@ -21,5 +21,21 @@ console.log(checkNonDecreasingArrayPossibility([1, 2, 3, 4, 5])) // false;
 
 
 const isNonDecreasingArr2 = (arr) => {
+    let count = 0;
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] > arr[i + 1]) {
+            count += 1;
+            arr[i + 1] = arr[i];
+        }
 
+        if ((count > 1))
+            return false;
+
+    }
+    return true
 }
+
+
+console.log(isNonDecreasingArr2([1, 1, 2, 4, 4, 3, 5])); //true; 3 is repeated only once
+console.log(isNonDecreasingArr2([1, 2, 3, 4, 5])) // true; // already incrementing array
+console.log(isNonDecreasingArr2([1, 1, 2, 4, 4, 3, 3, 5])); //false; 3 repeated 2 times;
