@@ -39,3 +39,29 @@ const isNonDecreasingArr2 = (arr) => {
 console.log(isNonDecreasingArr2([1, 1, 2, 4, 4, 3, 5])); //true; 3 is repeated only once
 console.log(isNonDecreasingArr2([1, 2, 3, 4, 5])) // true; // already incrementing array
 console.log(isNonDecreasingArr2([1, 1, 2, 4, 4, 3, 3, 5])); //false; 3 repeated 2 times;
+
+
+// solution 2 
+
+// there is a problem in the below statement at index 0
+// checking arr[i] < arr[i - 1], but i = 0 in the first iteration, so arr[-1] is undefined.
+
+const isNonDecreasingArr3 = (arr) => {
+    let count = 0;
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] < arr[i - 1]) {
+            count += 1;
+            arr[i] = arr[i - 1]; // problem here
+        }
+
+        if ((count > 1))
+            return false;
+
+    }
+    return true
+}
+
+
+console.log(isNonDecreasingArr3([1, 1, 2, 4, 4, 3, 5])); //true; 3 is repeated only once
+console.log(isNonDecreasingArr3([1, 2, 3, 4, 5])) // true; // already incrementing array
+console.log(isNonDecreasingArr3([1, 1, 2, 4, 4, 3, 3, 5])); //false; 3 repeated 2 times;
