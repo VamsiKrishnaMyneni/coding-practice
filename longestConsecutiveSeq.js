@@ -1,3 +1,9 @@
+// Problem: 
+// Given an unsorted array of integers,
+// find the length of the longest consecutive elements sequence.
+
+// Your solution should run in O(n) complexity.
+// Example: with new Set() method
 const longestConsecutiveSeq = (arr) => {
     let maxCount = 0;
     let numSet = new Set(arr);
@@ -21,6 +27,8 @@ const longestConsecutiveSeq = (arr) => {
 const arrValue = [100, 4, 200, 1, 3, 2];
 console.log(longestConsecutiveSeq(arrValue)); // Output: 4 for (1, 2, 3, 4)
 
+
+// solution: 2  O(N^3)
 // using brute force approach
 
 const longestConsecutiveSeqBruteForce = (arr) => {
