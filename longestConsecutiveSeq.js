@@ -36,3 +36,5 @@ const longestConsecutiveSeqBruteForce = (arr) => {
     }
     return maxCount;
 }
+
+console.log(longestConsecutiveSeqBruteForce(arrValue)); // Output: 4 for (1, 2, 3, 4)
