@@ -11,7 +11,30 @@ Space complexity:
 O(n), because it creates a new function for each function in the input array.
 */
 
+// solution-1
+(function () {
+    const compose = function (functions) {
+        if (!Array.isArray(functions)) {
+            throw 'Not an array';
+        }
+        if (!functions?.length) {
+            return function (x) { return x; };
+        }
+        return function (x) {
+            let result = x;
+            for (let i = functions.length - 1; i >= 0; i--) {
+                result = functions[i](result);
+            }
+            return result;
+        }
+    };
 
+
+    const fn = compose([x => x + 1, x => x * x, x => 2 * x])
+    console.log(fn(4)) // 9
+})();
+
+// solution-2
 (function () {
     const compose = function (functions) {
         if (!Array.isArray(functions)) {
@@ -34,7 +57,7 @@ O(n), because it creates a new function for each function in the input array.
     console.log(fn(4)) // 9
 })();
 
-// Solution-2
+// Solution-3
 
 (function () {
     /**
