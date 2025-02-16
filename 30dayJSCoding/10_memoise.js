@@ -2,6 +2,8 @@
 Given a function fn, return a memoized version of that function.
 */
 
+// solution 1;
+
 (function () {
     function memoize(fn) {
         const cache = new Map();
@@ -17,3 +19,19 @@ Given a function fn, return a memoized version of that function.
         }
     }
 })
+
+    // solution 2;
+    (function () {
+        function memoize(fn) {
+            const cache = {};
+            return function (...args) {
+                const key = JSON.stringify(args);
+                if (cache[key]) {
+                    return cache[key];
+                }
+                const result = fn(...args);
+                cache[key] = result;
+                return result;
+            }
+        }
+    })
