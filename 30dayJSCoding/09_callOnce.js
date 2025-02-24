@@ -19,6 +19,7 @@ Every subsequent time it is called, it should return undefined.
     let fn = (a, b, c) => (a + b + c);
     let onceFn = once(fn);
 
-    onceFn(1, 2, 3); // 6
-    onceFn(2, 3, 6); // returns undefined without calling fn
+    console.log(onceFn(1, 2, 3)); // 6
+    console.log(onceFn(2, 3, 6)); // returns undefined without calling fn
+    console.log(onceFn(4, 5, 7)); // returns undefined without calling fn
 })();
