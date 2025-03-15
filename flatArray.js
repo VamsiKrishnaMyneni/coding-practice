@@ -12,4 +12,4 @@ const flatArray = (arr) => {
     return result;
 };
 
-console.log(flatArray(input));
+console.log(flatArray(input)); // output [1, 2, 3, 4, 5]
