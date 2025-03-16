@@ -12,4 +12,14 @@ const flatArray = (arr) => {
     return result;
 };
 
+
+console.log(flatArray(input)); // output [1, 2, 3, 4, 5]
+
+
+const flatArray2 = (arr) => {
+    return arr.reduce((acc, val) => {
+        return acc.concat(Array.isArray(val) ? flatArray2(val) : val);
+    }, []);
+}
+
 console.log(flatArray(input)); // output [1, 2, 3, 4, 5]
