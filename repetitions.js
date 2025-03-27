@@ -14,6 +14,15 @@ const getRepetitions = (str) => {
     return count;
 }
 
-console.log(getRepetitions(str))
+console.log(getRepetitions(str)) // { j: 1, a: 2, v: 1, s: 1, c: 1, r: 1, i: 1, p: 1, t: 1 }
 
-// Output: { j: 1, a: 2, v: 1, s: 1, c: 1, r: 1, i: 1, p: 1, t: 1 }
+
+const getRepetitionsCount = (str) => {
+    const count = {};
+    for (key of str) {
+        count[key] = (count[key] || 0) + 1;
+    }
+    return count;
+}
+
+console.log(getRepetitionsCount(str));  // { j: 1, a: 2, v: 1, s: 1, c: 1, r: 1, i: 1, p: 1, t: 1 }
