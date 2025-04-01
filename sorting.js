@@ -4,5 +4,6 @@ console.log(unsortedArray.sort()); // ascending order
 
 console.log(unsortedArray.sort((a, b) => a - b)) // ascending order
 
+console.log(unsortedArray.sort((a, b) => b - a)) // descending order
 
 
