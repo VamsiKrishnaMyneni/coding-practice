@@ -14,6 +14,7 @@ console.log(stringArray.sort()); // ascending order
 
 console.log(stringArray.sort((a, b) => a.localeCompare(b))) // ascending order
 
+console.log(stringArray.sort((a, b) => b.localeCompare(a))) // descending order
 
 
 
