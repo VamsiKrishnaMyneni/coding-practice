@@ -12,5 +12,8 @@ console.log(unsortedArray.sort((a, b) => b - a)) // descending order
 
 console.log(stringArray.sort()); // ascending order 
 
+console.log(stringArray.sort((a, b) => a.localeCompare(b))) // ascending order
+
+
 
 
