@@ -31,25 +31,7 @@ To explore and utilize the problems and solutions:
 
    Each problem's solution can be viewed by opening the corresponding `index.html` file in your web browser. For instance:
 
-   - On **Windows**:
-
-     ```bash
-     start interview-asked/index.html
-     ```
-
-   - On **macOS**:
-
-     ```bash
-     open interview-asked/index.html
-     ```
-
-   - On **Linux**:
-
-     ```bash
-     xdg-open interview-asked/index.html
-     ```
-
-   Alternatively, you can navigate to the file location using your file explorer and double-click the `index.html` file to open it in your default web browser.
+   You can navigate to the file location using your file explorer and double-click the `index.html` file to open it in your default web browser.
 
 ## Contribution Guidelines
 
