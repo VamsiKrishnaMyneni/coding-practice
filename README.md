@@ -1,4 +1,4 @@
-The GitHub repository [coding-practice](https://github.com/VamsiKrishnaMyneni/coding-practice) is a comprehensive collection of JavaScript coding problems and their solutions, sourced from platforms like **LeetCode** and **Stack Overflow**. It aims to assist programmers in enhancing their problem-solving skills and preparing for JavaScript-focused coding interviews.
+The GitHub repository [coding-practice](https://github.com/VamsiKrishnaMyneni/coding-practice) is a comprehensive collection of JavaScript coding problems and their solutions, sourced from platforms like **LeetCode**, **Stack Overflow** and **interviews**. It aims to assist programmers in enhancing their problem-solving skills and preparing for JavaScript-focused coding interviews.
 
 ## Repository Structure
 
@@ -32,6 +32,8 @@ To explore and utilize the problems and solutions:
    Each problem's solution can be viewed by opening the corresponding `index.html` file in your web browser. For instance:
 
    You can navigate to the file location using your file explorer and double-click the `index.html` file to open it in your default web browser.
+
+   You can open you browser console and can see output of every solution printed in the console.
 
 ## Contribution Guidelines
 
