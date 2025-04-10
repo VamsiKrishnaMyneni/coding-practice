@@ -25,6 +25,8 @@ interview-asked
 You can clone this repository and start exploring the problems:
  
 git clone https://github.com/VamsiKrishnaMyneni/coding-practice.git
+
 cd coding-practice
+
 open html file in each folder to see the output.
 
