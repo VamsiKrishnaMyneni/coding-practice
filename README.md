@@ -33,6 +33,8 @@ To explore and utilize the problems and solutions:
 
    You can navigate to the file location using your file explorer and double-click the `index.html` file to open it in your default web browser.
 
+   You can open you browser console and can see output of every solution printed in the console.
+
 ## Contribution Guidelines
 
 Contributions to this repository are welcome. To contribute:
