@@ -8,16 +8,15 @@ what is functional composition?
 (function () {
     const compose = function (functions) {
         return function (x) {
-            let result = 0;
+            let result = x;
             for (let i = functions.length; i > 0; i--) {
-                const y = functions[i - 1](x);
-                result += y;
+                result = functions[i - 1](result);
             }
             return result;
         }
     };
 
 
-    const fn = compose([x => x + 1, x => 2 * x])
+    const fn = compose([x => x + 1, x => x * x, x => 2 * x])
     console.log(fn(4)) // 9
 })();
