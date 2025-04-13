@@ -7,6 +7,12 @@ what is functional composition?
 
 (function () {
     const compose = function (functions) {
+        if (!Array.isArray(functions)) {
+            throw 'Not an array';
+        }
+        if (!functions?.length) {
+            return function (x) { return x; };
+        }
         return function (x) {
             let result = x;
             for (let i = functions.length; i > 0; i--) {
