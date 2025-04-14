@@ -23,7 +23,8 @@ Please solve it without the built-in Array.filter method.
             throw new Error('Not an array.');
         }
         for (let i = 0; i < arr.length; i++) {
-            result.push(fn(arr[i], i))
+            if (fn(arr[i], i))
+                result.push(arr[i]);
         }
 
         return result;
