@@ -5,6 +5,8 @@ The returned array should be created such that returnedArray[i] = fn(arr[i], i).
 
 Please solve it without the built-in Array.map method.
 
+** should not mutate the original array.
+
 */
 
 const map = (arr, fn) => {
