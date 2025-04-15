@@ -9,15 +9,17 @@ Please solve it without the built-in Array.map method.
 
 */
 
-const map = (arr, fn) => {
-    const result = [];
-    if (!Array.isArray(arr)) {
-        throw new Error('not an array.');
-    }
-    for (let i = 0; i < arr.length; i++) {
-        result.push(fn(arr[i], i));
-    }
-    return result;
-};
+(function () {
+    const map = (arr, fn) => {
+        const result = [];
+        if (!Array.isArray(arr)) {
+            throw new Error('not an array.');
+        }
+        for (let i = 0; i < arr.length; i++) {
+            result.push(fn(arr[i], i));
+        }
+        return result;
+    };
 
-console.log(map([1, 2, 3], (element) => element + 1));
+    console.log(map([1, 2, 3], (element) => element + 1));
+})();
