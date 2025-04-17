@@ -3,7 +3,7 @@
 
 function counter(num) {
     return function () {
-        return num++;
+        return ++num;
     }
 }
 
