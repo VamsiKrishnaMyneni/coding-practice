@@ -11,10 +11,10 @@ reset() sets the current value to init and then returns it.
 function createCounter(num) {
     let internalNumber = num;
     const increment = () => {
-        return internalNumber++;
+        return ++internalNumber;
     }
     const decrement = () => {
-        return internalNumber--;
+        return --internalNumber;
     }
     const reset = () => {
         internalNumber = num;
