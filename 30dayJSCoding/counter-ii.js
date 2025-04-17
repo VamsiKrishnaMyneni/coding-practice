@@ -8,8 +8,8 @@ decrement() reduces the current value by 1 and then returns it.
 reset() sets the current value to init and then returns it.
  */
 
-function createCounter(num) {
-    let internalNumber = num;
+function createCounter(init) {
+    let internalNumber = init;
     const increment = () => {
         return ++internalNumber;
     }
@@ -17,7 +17,7 @@ function createCounter(num) {
         return --internalNumber;
     }
     const reset = () => {
-        internalNumber = num;
+        internalNumber = init;
         return internalNumber;
     }
 
