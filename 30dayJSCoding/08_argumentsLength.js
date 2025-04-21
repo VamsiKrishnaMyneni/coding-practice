@@ -13,6 +13,11 @@ URL: https://leetcode.com/problems/return-length-of-arguments-passed/solutions/5
         return args?.length || 0;
     };
     console.log(argumentsLength(1, 2, 3)); // 3
+
+
+    var argumentsLength2 = (...args) => args?.length || 0;
+
+    console.log(argumentsLength2(1, 2, 3)); // 3
 })();
 
 // Solution-2
