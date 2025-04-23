@@ -13,3 +13,13 @@ The returned promise should resolve with the sum of the two numbers.
     addTwoPromises(Promise.resolve(3), Promise.resolve(2))
         .then(console.log);
 })();
+
+(function () {
+    var addPromises = async function (...args) {
+        const values = await Promise.all(args);
+        return values.reduce((acc, val) => acc + val, 0);
+    };
+    // Example usage:
+    addPromises(Promise.resolve(4), Promise.resolve(2))
+        .then(console.log);
+})();
