@@ -41,4 +41,9 @@ Given a function fn, return a memoized version of that function.
                 return result;
             }
         }
+        // Example usage:
+        let callCount = 0;
+        const memoizedFn = memoize((a, b) => a + b)
+        memoizedFn(2, 3) // 5
+        memoizedFn(2, 3) // 5
     })
